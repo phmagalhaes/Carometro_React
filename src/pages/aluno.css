@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --vermelho: #FF0000;
+    font-family: "Roboto";
+}
+
+.turmaPage_alunos {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+    padding: 0 0 30px 0;
+}
+
+.aluno {
+    background: linear-gradient(#FF0000, #700000);
+    padding: 15px;
+    border-radius: 10px;
+    width: 23%;
+    color: #fdfdfd;
+    display: flex;
+    align-items: start;
+    position: relative;
+    justify-content: space-between;
+}
+
+.aluno p {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.aluno .alunosLink {
+    color: #fdfdfd;
+    font-size: 15px;
+    bottom: 20px;
+    text-decoration: none;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+
+.aluno .alunosLink:hover {
+    text-decoration: underline;
+}
+
+.aluno img {
+    width: 100px;
+}
+.logout_button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    background-color: #FFE4E4;
+    transition: all 250ms ease;
+    color: var(--vermelho);
+    font-weight: 600;
+    text-decoration: none;
+}
+.logout_button:hover{
+    padding: 15px 25px;
+    border-radius: 30px;
+}
+
+.inputTurma{
+    display: none;
+}
+
+.alunoPage {
+    min-height: 100vh;
+    background-color: #ffe4e4;
+}
+
+.alunoPage_header {
+    background-color: var(--vermelho);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 40px;
+    position: relative;
+}
+
+.senaiLogo {
+    width: 200px;
+}
+
+.linkHome {
+    font-size: 20px;
+    color: #fdfdfd;
+    text-decoration: none;
+}
+
+.linkHome:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.alunoPage_title {
+    text-align: center;
+    font-size: 25px;
+    padding: 30px;
+}
+.alunoPage_title h1, .alunoPage_title p{
+color: var(--vermelho);
+}
+
+.alunoPage_alunos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+    padding: 0 0 30px 0;
+}
+
+.alunoPage_content{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.alunoPage_content_img img{
+    border-radius: 30px;
+    width: 550px;
+}
+.alunoPage_content_information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.alunoPage_content_information form{
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 80px;
+    height: 30%;
+}
+.alunoPage_content_information input{
+    border-radius: 30px;
+    padding: 10px 15px;
+    border: 1px solid gray;
+    width: 230px;
+    color: black;
+}
+.alunoPage_content_information div{
+    height: 30%;
+}
+.alunoPage_content_information div p{
+    color: black;
+}
+.alunoPage_content_information div h2{
+    color: #700000;
+}
+
+.alunoPage_formOcorrencia{
+    padding: 0px 40px;
+    margin-top: 40px;
+}
+.alunoPage_formOcorrencia h2{
+    color: #700000;
+}
+.alunoPage_formOcorrencia form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.alunoPage_formOcorrencia form div{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.alunoPage_formOcorrencia form textarea{
+    padding: 20px 20px;
+    color: black;
+    width: 50%;
+    height: 150px;
+    border-radius: 30px;
+    margin: 10px 0;
+}
+.alunoPage_formOcorrencia form input, .alunoPage_formOcorrencia form select {
+    padding: 10px;
+    color: black;
+    width: 48%;
+    border-radius: 30px;
+    border: 1px solid gray;
+}
+.alunoPage_formOcorrencia form select option{
+    color: black;
+}
+.buttonsAluno{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 90%; */
+    margin-top: 40px;
+}
+.buttonsAluno button, .alunoPage_formOcorrencia form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #F9CACA;
+    color: #700000;
+    border-radius: 30px;
+    transition: all 250ms ease-out;
+    border: 1px solid #700000;
+    font-weight: 500;
+}
+.buttonsAluno button:hover, .alunoPage_formOcorrencia form button:hover {
+    background-color: #AB1818;
+    color: #fdfdfd;
+    cursor: pointer;
+    border: 1px solid #AB1818;
+}
+.buttonsAluno button:disabled {
+    color: black;
+    border: 1px solid gray;
+    background-color: white;
+}
+.buttonsAluno button:disabled:hover {
+    cursor: default;
+}
+.inputCpfAluno{
+    display: none;
+}
+.alunoPage_ocorrencias{
+    padding: 0 40px;
+    padding-bottom: 40px;
+}
+.alunoPage_ocorrencias h2{
+    color: #700000;
+    font-size: 35px;
+}
+.ocorrencias{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: start;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.alunoPage_ocorrencia {
+    background: linear-gradient(#FF0000, #700000);
+    padding: 15px;
+    border-radius: 10px;
+    width: 18%;
+    color: #fdfdfd;
+}
+
+.alunoPage_ocorrencia p {
+    font-size: 15px;
+}

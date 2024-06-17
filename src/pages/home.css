@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --vermelho: #FF0000;
+    font-family: "Roboto";
+    color: #fdfdfd;
+    text-decoration: none;
+}
+.homePage{
+    min-height: 100vh;
+    background-color: #ffe4e4;
+}
+.homePage_header{
+    background-color: var(--vermelho);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 40px;
+    position: relative;
+}
+.senaiLogo{
+    width: 200px;
+}
+.ph-user-circle{
+   font-size: 50px;
+    color: white;
+    cursor: pointer;
+}
+.homePage_header input{
+    border: none;
+    padding: 15px;
+    width: 40%;
+    border-radius: 10px;
+    
+}
+.homePage_header input:focus{
+    outline: none;
+}
+.homePage_turmas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 50px;
+}
+.turma{
+    background: linear-gradient(#FF0000, #700000);
+    width: 30%;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fdfdfd;
+    position: relative;
+    cursor: pointer;
+
+}
+.turma_arrow{
+    position: absolute;
+    font-size: 50px;
+    bottom: 20px;
+    right: 35px;
+    transition: all 250ms ease;
+    
+}
+.turma:hover .turma_arrow{
+    right: 25px;
+}
+.link{
+    color: #fdfdfd;
+    text-decoration: none;
+}
